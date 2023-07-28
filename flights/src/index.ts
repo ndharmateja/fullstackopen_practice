@@ -8,5 +8,5 @@ app.use(express.json());
 app.get("/ping", (_req, res) => res.send("pong"));
 
 // Start listening
-const PORT = 3000;
+const PORT = 3003;
 app.listen(PORT, () => console.log(`Server running on ${PORT}`));
