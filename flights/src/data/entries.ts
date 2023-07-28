@@ -1,4 +1,4 @@
-import { DiaryEntry } from "../types/types";
+import { DiaryEntry } from "../types";
 
 const diaryEntries: DiaryEntry[] = [
   {
