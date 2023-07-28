@@ -1,8 +1,10 @@
 import diaries from "../data/entries";
 import { DiaryEntry } from "../types";
 
+const diaryData: DiaryEntry[] = diaries;
+
 const getEntries = (): DiaryEntry[] => {
-  return diaries;
+  return diaryData;
 };
 
 const addEntry = () => {
