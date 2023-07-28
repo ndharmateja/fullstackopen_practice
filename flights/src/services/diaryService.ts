@@ -17,10 +17,19 @@ const diaryEntryToNonSensitive = (
   const { id, date, weather, visibility } = entry;
   return { id, date, weather, visibility };
 };
+
+const getEntryById = (id: number): NonSensitiveDiaryEntry | undefined => {
+  const nonSensitiveEntries = getNonSensitiveDiaryEntries();
+  return nonSensitiveEntries.find((entry) => entry.id === id);
 };
 
 const addEntry = () => {
   return null;
 };
 
-export default { getEntries, addEntry, getNonSensitiveDiaryEntries };
+export default {
+  getEntries,
+  addEntry,
+  getNonSensitiveDiaryEntries,
+  getEntryById,
+};
