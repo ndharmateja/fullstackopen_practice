@@ -16,9 +16,13 @@
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^4.17.17",
+    "@types/morgan": "^1.9.4",
     "@typescript-eslint/eslint-plugin": "^6.2.0",
     "@typescript-eslint/parser": "^6.2.0",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "morgan": "^1.10.0"
   }
 }
