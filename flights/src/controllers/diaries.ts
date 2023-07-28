@@ -1,5 +1,5 @@
 import express from "express";
-import diaryService from "../services/diaryService";
+import diaryService from "../services/diary_service";
 
 export const getDiaries = (_req: express.Request, res: express.Response) => {
   return res.json(diaryService.getNonSensitiveDiaryEntries());
