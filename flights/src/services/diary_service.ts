@@ -23,9 +23,10 @@ const getEntryById = (id: number): NonSensitiveDiaryEntry | undefined => {
   return nonSensitiveEntries.find((entry) => entry.id === id);
 };
 
-const addEntry = (newEntry: NewDiaryEntry) => {
-  const diaryEntry: DiaryEntry = { ...newEntry, id: diaryData.length };
+const addEntry = (newEntry: NewDiaryEntry): DiaryEntry => {
+  const diaryEntry: DiaryEntry = { ...newEntry, id: diaryData.length + 1 };
   diaryData.push(diaryEntry);
+  return diaryEntry;
 };
 
 export default {
