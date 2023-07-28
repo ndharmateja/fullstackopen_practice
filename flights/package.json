@@ -7,9 +7,9 @@
     "build": "tsc",
     "dev": "ts-node-dev src/index.ts",
     "lint": "eslint --ext .ts .",
-    "start": "npm run tsc && node build/index.js",
+    "start": "npm run build && node build/index.js",
     "clean": "rm -rf build",
-    "cleanbuild": "npm run clean && npm run tsc"
+    "cleanbuild": "npm run clean && npm run build"
   },
   "keywords": [],
   "author": "",
