@@ -60,11 +60,11 @@ export const toNewDiaryEntry = (object: unknown): NewDiaryEntry => {
   if (!("visibility" in object)) throw new Error("Missing field: visibility");
   if (!("date" in object)) throw new Error("Missing field: date");
   if (!("weather" in object)) throw new Error("Missing field: weather");
-  if (!("comment" in object)) throw new Error("Missing field: comment");
+  //   if (!("comment" in object)) throw new Error("Missing field: comment");
 
   const newEntry: NewDiaryEntry = {
     date: parseDate(object.date),
-    comment: parseComment(object.comment),
+    comment: "comment" in object ? parseComment(object.comment) : undefined,
     weather: parseWeather(object.weather),
     visibility: parseVisibility(object.visibility),
   };
