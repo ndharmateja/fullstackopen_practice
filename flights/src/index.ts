@@ -1,7 +1,7 @@
 import express from "express";
 import diariesRouter from "./routes/diaries";
 import morgan from "morgan";
-import { errorHandler } from "./middleware.ts/error_handler";
+import { errorHandler } from "./middleware/error_handler";
 
 // Create express app and mw
 const app = express();
